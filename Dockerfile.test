@@ -1,10 +1,10 @@
 FROM gradle:6.0.0-jdk8
 
 # Copy source code to image
-COPY . /home/gradle/src
+COPY . /app
 
 # Set working directory
-WORKDIR /home/grade/src
+WORKDIR /app
 
 # Run build
 RUN gradle build
